@@ -1,0 +1,764 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Breeding Bird Atlas Explorer</title>
+  <link rel="schema.dc" href="http://purl.org/metadata/dublin_core"/>
+  <meta name="dc.title" content="Breeding Bird Atlas Explorer "/>
+  <meta name="dc.creator" content="USGS Patuxent Wildlife Research Center and NBII "/>
+  <meta name="dc.subject" content="environment "/>
+  <meta name="dc.description" content="The Breeding Bird Atlas (BBA) Explorer is a website and data management system that offers data from published BBAs and interim data from ongoing BBAs in the United States in a uniform system. It allows users to learn about the methods used in each atlas project, to get species and block information for each project, and to view the results by species, block, or region in a table or map format. Most descriptive information and tabular results are available through each Atlas Home page and maps are available through our BBA Species Map tool. There are over 30 state datasets, and a dozen county-level atlas datasets, contained in the repository, but it does not contain all of the atlas projects in North American. The database housing these geospatial datasets contains more information on request, mostly metadata about methods and more detailed effort and observational data that may be useful in research. See our contact information for further information.Additional breeding bird atlas datasets can be obtained through Bird Studies Canada, which holds all of the Canadian atlas datasets, and the Cornell Lab of Ornithology, which houses several recent or current atlas projects through their website. "/>
+  <meta name="dc.publisher" content="U.S. Geological Survey, Patuxent Wildlife Research Center"/>
+  <meta name="dc.contributor" content="Thousands of volunteers in atlas project in over 30 states and a dozen counties collected the data for each breeding bird atlas project. Individual project sponsors are listed here: http://www.pwrc.usgs.gov/bba/index.cfm?fa=bba.Sponsors.   More details on each projects, and contact and source information for each (state or county) project is contained in the individual project datasets and metadata records.  We compiled these datasets for use in a common system for access at USGS Patuxent Wildlife Research Center. Data compilers include Naoko Griffin, Allison Sussman, Anna Ott, Mark Wimer. The compiling of atlas datasets was supported primarily through funding from the National Biological Information Infrastructure, or NBII, Bird Conservation Node. Elizabeth Martin at NBII was central to the support of this database from 2001 to 2010. "/>
+  <meta name="dc.date" content="20110630"/>
+  <meta name="dc.type" content="data.vector digital data"/>
+  <meta name="dc.identifier" content="http://www.pwrc.usgs.gov/bba"/>
+  <meta name="dc.source" content="Downloadable Data"/>
+  <meta name="dc.lang" content="en"/>
+  <meta name="dc.coverage.x.min" scheme="DD" content="-139.057064"/>
+  <meta name="dc.coverage.x.max" scheme="DD" content="-57.106682"/>
+  <meta name="dc.coverage.y.min" scheme="DD" content="24.543936"/>
+  <meta name="dc.coverage.y.max" scheme="DD" content="62.582909"/>
+  <meta name="dc.coverage.placeName" content="Alabama"/>
+  <meta name="dc.coverage.placeName" content="Arizona"/>
+  <meta name="dc.coverage.placeName" content="Arkansas"/>
+  <meta name="dc.coverage.placeName" content="California"/>
+  <meta name="dc.coverage.placeName" content="Colorado"/>
+  <meta name="dc.coverage.placeName" content="Connecticut"/>
+  <meta name="dc.coverage.placeName" content="Delaware"/>
+  <meta name="dc.coverage.placeName" content="Florida"/>
+  <meta name="dc.coverage.placeName" content="Georgia"/>
+  <meta name="dc.coverage.placeName" content="Illinois"/>
+  <meta name="dc.coverage.placeName" content="Indiana"/>
+  <meta name="dc.coverage.placeName" content="Iowa"/>
+  <meta name="dc.coverage.placeName" content="Kansas"/>
+  <meta name="dc.coverage.placeName" content="Kentucky"/>
+  <meta name="dc.coverage.placeName" content="Louisiana"/>
+  <meta name="dc.coverage.placeName" content="Maine"/>
+  <meta name="dc.coverage.placeName" content="Maryland"/>
+  <meta name="dc.coverage.placeName" content="Massachusetts"/>
+  <meta name="dc.coverage.placeName" content="Michigan"/>
+  <meta name="dc.coverage.placeName" content="Minnesota"/>
+  <meta name="dc.coverage.placeName" content="Mississippi"/>
+  <meta name="dc.coverage.placeName" content="Missouri"/>
+  <meta name="dc.coverage.placeName" content="Nebraska"/>
+  <meta name="dc.coverage.placeName" content="Nevada"/>
+  <meta name="dc.coverage.placeName" content="New Hampshire"/>
+  <meta name="dc.coverage.placeName" content="New Jersey"/>
+  <meta name="dc.coverage.placeName" content="New Mexico"/>
+  <meta name="dc.coverage.placeName" content="New York"/>
+  <meta name="dc.coverage.placeName" content="North Carolina"/>
+  <meta name="dc.coverage.placeName" content="Ohio"/>
+  <meta name="dc.coverage.placeName" content="Oklahoma"/>
+  <meta name="dc.coverage.placeName" content="Oregon"/>
+  <meta name="dc.coverage.placeName" content="Pennsylvania"/>
+  <meta name="dc.coverage.placeName" content="Puerto Rico"/>
+  <meta name="dc.coverage.placeName" content="Rhode Island"/>
+  <meta name="dc.coverage.placeName" content="South Carolina"/>
+  <meta name="dc.coverage.placeName" content="South Dakota"/>
+  <meta name="dc.coverage.placeName" content="Tennessee"/>
+  <meta name="dc.coverage.placeName" content="Texas"/>
+  <meta name="dc.coverage.placeName" content="Vermont"/>
+  <meta name="dc.coverage.placeName" content="Virginia"/>
+  <meta name="dc.coverage.placeName" content="Washington DC"/>
+  <meta name="dc.coverage.placeName" content="West Virginia"/>
+  <meta name="dc.coverage.placeName" content="Wisconsin"/>
+  <meta name="dc.rights" content="Access constraints: None; Use constraints: USGS Patuxent Wildlife Research Center's website and date of access should be cited in any use of this database (see Citation section)."/>
+  <meta name="generated-from" content="AtlasProjects_xslttransformaRet.xml"/>
+</head>
+<body>
+<h1>Breeding Bird Atlas Explorer</h1>
+Metadata also available as - [<a href="Breeding Bird Atlas Explorer.html">Outline</a>] - [<a href="Breeding Bird Atlas Explorer.met">Parseable text</a>] - [<a href="Breeding Bird Atlas Explorer.xml">XML</a>]<p>
+<h4>Frequently-anticipated questions:</h4>
+<ul>
+  <li><a href="#what">What does this data set describe?</a>
+    <ol>
+      <li><a href="#what.1">How should this data set be cited?</a></li>
+      <li><a href="#what.2">What geographic area does the data set cover?</a></li>
+      <li><a href="#what.3">What does it look like?</a></li>
+      <li><a href="#what.4">Does the data set describe conditions during a particular time period?</a></li>
+      <li><a href="#what.5">What is the general form of this data set?</a></li>
+      <li><a href="#what.6">How does the data set represent geographic features?</a></li>
+      <li><a href="#what.7">How does the data set describe geographic features?</a></li>
+    </ol>
+  </li>
+  <li><a href="#who">Who produced the data set?</a>
+    <ol>
+      <li><a href="#who.1">Who are the originators of the data set?</a></li>
+      <li><a href="#who.2">Who also contributed to the data set?</a></li>
+      <li><a href="#who.3">To whom should users address questions about the data?</a></li>
+    </ol>
+  </li>
+  <li><a href="#why">Why was the data set created?</a></li>
+  <li><a href="#how">How was the data set created?</a>
+    <ol>
+      <li><a href="#how.1">From what previous works were the data drawn?</a></li>
+      <li><a href="#how.2">How were the data generated, processed, and modified?</a></li>
+      <li><a href="#how.3">What similar or related data should the user be aware of?</a></li>
+    </ol>
+  </li>
+  <li><a href="#quality">How reliable are the data; what problems remain in the data set?</a>
+    <ol>
+      <li><a href="#quality.1">How well have the observations been checked?</a></li>
+      <li><a href="#quality.2">How accurate are the geographic locations?</a></li>
+      <li><a href="#quality.3">How accurate are the heights or depths?</a></li>
+      <li><a href="#quality.4">Where are the gaps in the data?  What is missing?</a></li>
+      <li><a href="#quality.5">How consistent are the relationships among the data, including topology?</a></li>
+    </ol>
+  </li>
+  <li><a href="#getacopy">How can someone get a copy of the data set?</a>
+    <ol>
+      <li><a href="#getacopy.0">Are there legal restrictions on access or use of the data?</a></li>
+      <li><a href="#getacopy.1">Who distributes the data?</a></li>
+      <li><a href="#getacopy.2">What's the catalog number I need to order this data set?</a></li>
+      <li><a href="#getacopy.3">What legal disclaimers am I supposed to read?</a></li>
+      <li><a href="#getacopy.4">How can I download or order the data?</a></li>
+    </ol>
+  </li>
+  <li><a href="#metaref">Who wrote the metadata?</a></li>
+</ul>
+<hr/>
+<h3><a name="what">What does this data set describe?</a></h3>
+<div style="margin-left: 2em">
+<dl>
+<dt><em>Title:</em>  Breeding Bird Atlas Explorer</dt>
+<dt><em>Abstract:</em>  
+<dd>
+
+The Breeding Bird Atlas (BBA) Explorer is a website and data management system that offers data from published BBAs and interim data from ongoing BBAs in the United States in a uniform system. It allows users to learn about the methods used in each atlas project, to get species and block information for each project, and to view the results by species, block, or region in a table or map format. Most descriptive information and tabular results are available through each Atlas Home page and maps are available through our BBA Species Map tool. There are over 30 state datasets, and a dozen county-level atlas datasets, contained in the repository, but it does not contain all of the atlas projects in North American. The database housing these geospatial datasets contains more information on request, mostly metadata about methods and more detailed effort and observational data that may be useful in research. See our contact information for further information.Additional breeding bird atlas datasets can be obtained through Bird Studies Canada, which holds all of the Canadian atlas datasets, and the Cornell Lab of Ornithology, which houses several recent or current atlas projects through their website.
+
+</dd>
+<dt><em>Supplemental_Information:</em>  
+<dd>
+
+We attempt to provide this information in multiple formats. First, we provide web-based mapping that does not require the user to have GIS at all. These maps are available at the main URI. 
+<br/>
+Next we have provided shapefiles in the past, however we intend to move towards other formats: ESRI file geodatabases, and Web mapping services.
+
+</dd>
+</dl>
+</div>
+<ol>
+<li><a name="what.1"><b>How should this data set be cited?</b></a><p>
+<blockquote>
+USGS Patuxent Wildlife Research Center and NBII, 20110630, Breeding Bird Atlas Explorer: U.S. Geological Survey, Laurel, MD.<p>
+Online Links:
+<ul>
+<li><a href="http://www.pwrc.usgs.gov/bba">&lt;http://www.pwrc.usgs.gov/bba&gt;</a>
+</ul>
+<p>
+</blockquote>
+<dl>
+<dt><em>Other_Citation_Details:</em>  
+<dd>
+
+U.S. Geological Survey, Patuxent Wildlife Research Center, 2011. Breeding Bird Atlas Explorer, provided by National Biological Information Infrastructure and USGS. Available online at <a href="http://www.pwrc.usgs.gov/bba">&lt;http://www.pwrc.usgs.gov/bba&gt;</a>. (Accessed &lt;access date here&gt;.)
+
+</dd>
+</dl>
+<p>
+</li>
+<li><a name="what.2"><b>What geographic area does the data set cover?</b></a><p>
+<dl>
+<dt><em>West_Bounding_Coordinate:</em>  -139.057064</dt>
+<dt><em>East_Bounding_Coordinate:</em>  -57.106682</dt>
+<dt><em>North_Bounding_Coordinate:</em>  62.582909</dt>
+<dt><em>South_Bounding_Coordinate:</em>  24.543936</dt>
+</dl>
+<p>
+</li>
+<li><a name="what.3"><b>What does it look like?</b></a><p>
+<p>
+</li>
+<li><a name="what.4"><b>Does the data set describe conditions during a particular time period?</b></a><p>
+<dl>
+<dt>Calendar_Date: 28-Jun-2011<dt><em>Currentness_Reference:</em>  Publication date</dt>
+</dl>
+<p>
+</li>
+<li><a name="what.5"><b>What is the general form of this data set?</b></a><p>
+<dl>
+<dt><em>Geospatial_Data_Presentation_Form:</em>  vector digital data</dt>
+</dl>
+<p>
+</li>
+<li><a name="what.6"><b>How does the data set represent geographic features?</b></a><p>
+<ol type="a">
+<li><a name="what.6.a"><b>How are geographic features stored in the data set?</b></a><p>
+This is a Vector data set.
+It contains the following vector data types (SDTS terminology):
+<ul>
+<li>GT-polygon composed of chains (77)
+</ul>
+<p>
+</li>
+<li><a name="what.6.b"><b>What coordinate system is used to represent geographic features?</b></a><p>
+Horizontal positions are specified in geographic coordinates, that is, latitude and longitude.
+Latitudes are given to the nearest 8.9831528411952133e-009.
+Longitudes are given to the nearest 8.9831528411952133e-009.
+Latitude and longitude values are specified in Decimal degrees.
+<p>
+The horizontal datum used is D North American 1983.<br/>
+The ellipsoid used is GRS 1980.<br/>
+The semi-major axis of the ellipsoid used is 6378137.0.<br/>
+The flattening of the ellipsoid used is 1/298.257222101.<br/>
+<p>
+</li>
+</ol>
+<p>
+</li>
+<li><a name="what.7"><b>How does the data set describe geographic features?</b></a><p>
+<dl>
+<dt><b><tt>Atlas Project boundaries and descriptions</tt></b><dd>ESRI File geodatabase and table
+  (Source: USGS and NBII Breeding Bird Atlas Explorer)
+<p>
+<dl>
+<dt><b><tt>Shape</tt></b><dd>Feature geometry.
+  (Source: ESRI)<p></p>
+<p>
+<em>
+Coordinates defining the features.
+</em>
+<p>
+<dt><b><tt>AreaName</tt></b><dd>Atlas survey project area - e.g. state or county name
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Value</th><th>Definition</th></tr>
+<tr><td valign="top">State</td><td>state
+</td></tr>
+<tr><td valign="top">County</td><td>county
+</td></tr>
+<tr><td valign="top">Province</td><td>province
+</td></tr>
+<tr><td valign="top">Territory</td><td>territory
+</td></tr>
+</table>
+<p>
+<dt><b><tt>Country</tt></b><dd>Atlas projects are currently limited to the US and Canada
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Value</th><th>Definition</th></tr>
+<tr><td valign="top">United States</td><td>United States
+</td></tr>
+<tr><td valign="top">Canada</td><td>Canada
+</td></tr>
+</table>
+<p>
+<dt><b><tt>AreaType</tt></b><dd>State, provincial, or county atlas
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Value</th><th>Definition</th></tr>
+<tr><td valign="top">State</td><td>state
+</td></tr>
+<tr><td valign="top">County</td><td>county
+</td></tr>
+<tr><td valign="top">Province</td><td>province
+</td></tr>
+<tr><td valign="top">Territory</td><td>territory
+</td></tr>
+</table>
+<p>
+<dt><b><tt>BBA_Name</tt></b><dd>Name for the project, as it appears in BBA explorer; may include years or version
+  (Source: USGS)<p></p>
+<p>
+<em>
+Unique names
+</em>
+<p>
+<dt><b><tt>Description</tt></b><dd>Brief project description
+  (Source: USGS)<p></p>
+<p>
+<em>
+Survey project description
+</em>
+<p>
+<dt><b><tt>Version</tt></b><dd>Atlases may be repeated over a long period; as of 2011, a dozen or more projects have started their 2nd version/round of surveys.
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Value</th><th>Definition</th></tr>
+<tr><td valign="top">1</td><td>First atlas
+</td></tr>
+<tr><td valign="top">2</td><td>Second atlas
+</td></tr>
+</table>
+<p>
+<dt><b><tt>Status</tt></b><dd>Whether published, or collecting data, and several other options
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Value</th><th>Definition</th></tr>
+<tr><td valign="top">Completed</td><td>Field work completed
+</td></tr>
+<tr><td valign="top">Incomplete</td><td>Project field work never completed
+</td></tr>
+<tr><td valign="top">In-progress</td><td>Field data collection underway
+</td></tr>
+<tr><td valign="top">Published</td><td>Project completed, results published
+</td></tr>
+<tr><td valign="top">Unknown</td><td>unknown status
+</td></tr>
+</table>
+<p>
+<dt><b><tt>ProjStatus</tt></b><dd>Numerical version of Status
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Value</th><th>Definition</th></tr>
+<tr><td valign="top">1</td><td>Public, published data
+</td></tr>
+<tr><td valign="top">10</td><td>Public, published here electronically only
+</td></tr>
+<tr><td valign="top">20</td><td>Publication in preparation
+</td></tr>
+<tr><td valign="top">40</td><td>Data entry in progress
+</td></tr>
+</table>
+<p>
+<dt><b><tt>StateProv</tt></b><dd>State or province; usually same as Area Name, but not for county atlases
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>Alabama</td></tr>
+<tr><th>Maximum:</th><td>Wisconsin</td></tr>
+</table>
+<p>
+<dt><b><tt>StartYr</tt></b><dd>Start year of field work; most atlases cover the area over ~ 5 years
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>1971</td></tr>
+<tr><th>Maximum:</th><td>2011</td></tr>
+</table>
+<p>
+<dt><b><tt>EndYr</tt></b><dd>End of field sampling work
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>1973</td></tr>
+<tr><th>Maximum:</th><td>2016</td></tr>
+</table>
+<p>
+<dt><b><tt>URL_ProjectHome</tt></b><dd>If the sponsoring organizations have a website, it is listed here
+  (Source: USGS)<p></p>
+<p>
+<em>
+Web url
+</em>
+<p>
+<dt><b><tt>PrintCitation</tt></b><dd>If a book or publication results, it is listed here
+  (Source: USGS)<p></p>
+<p>
+<em>
+Text citation
+</em>
+<p>
+<dt><b><tt>BBA_ID</tt></b><dd>internal identifier used to link various tables - unique for each project
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>CA-Sol2004</td></tr>
+<tr><th>Maximum:</th><td>WV1984</td></tr>
+</table>
+<p>
+<dt><b><tt>PubDate</tt></b><dd>Date of book publication, if any
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>1975</td></tr>
+<tr><th>Maximum:</th><td>2016</td></tr>
+</table>
+<p>
+<dt><b><tt>BlockSize</tt></b><dd>Survey blocks vary in size by project: many are 1/6th of a 7.5 minute topographic map, others are 10km sq for example
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Value</th><th>Definition</th></tr>
+<tr><td valign="top">1/24th USGS Topo Quad</td><td>portion of 7.5' minute topo
+</td></tr>
+<tr><td valign="top">1/6th of USGS Topo quad</td><td>ditto
+</td></tr>
+<tr><td valign="top">10km x 10km UTM grid</td><td>10 km sq blocks
+</td></tr>
+<tr><td valign="top">2.5km x 2.5km</td><td>smaller km blocks
+</td></tr>
+<tr><td valign="top">2km x 2km or 5km x 5km</td><td>mixed block sizes as shown
+</td></tr>
+<tr><td valign="top">3mi x 3mi township/range</td><td>based on TR system
+</td></tr>
+<tr><td valign="top">5km x 5km</td><td>5km sq, not stated as UTM
+</td></tr>
+<tr><td valign="top">5km x 5km UTM grid</td><td>5km sq but based in UTM
+</td></tr>
+<tr><td valign="top">Full USGS Topo quad</td><td>7.5' quadrangle
+</td></tr>
+</table>
+<p>
+<dt><b><tt>BlockType</tt></b><dd>Further description of survey blocks
+  (Source: USGS)<p></p>
+<p>
+<em>
+Further description of sampling blocks
+</em>
+<p>
+<dt><b><tt>SamplingGoal</tt></b><dd>Populated areas may attempt to cover all survey blocks on the grid - others can only do a sample
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Formal codeset</th></tr>
+<tr><th>Codeset Name:</th><td>Complete coverage to priority blocks, e.g. 1/6th</td></tr>
+<tr><th>Codeset Source:</th><td>USGS</td></tr>
+</table>
+<p>
+<dt><b><tt>Sampling</tt></b><dd>More description of sampling effort
+  (Source: USGS)<p></p>
+<p>
+<em>
+Text description of sampling design
+</em>
+<p>
+<dt><b><tt>URLdata</tt></b><dd>If a public dataset is available, e.g. where we harvested it for the BBA Explorer repository
+  (Source: USGS)<p></p>
+<p>
+<em>
+web URL
+</em>
+<p>
+<dt><b><tt>URLmap</tt></b><dd>Also, if a project publishes maps on the web, in addition to maps we prepare
+  (Source: USGS)<p></p>
+<p>
+<em>
+web URL
+</em>
+<p>
+<dt><b><tt>ProjectCitation</tt></b><dd>Citation information for the electronic copy in our repository
+  (Source: USGS)<p></p>
+<p>
+<em>
+Text citation
+</em>
+<p>
+<dt><b><tt>CoordinatorName</tt></b><dd>Person who coordinated the project's field effort
+  (Source: USGS)<p></p>
+<p>
+<em>
+Person's name
+</em>
+<p>
+<dt><b><tt>CurrentRespParty</tt></b><dd>Current contact person, e.g. to obtain permissions for extensive use of data
+  (Source: USGS)<p></p>
+<p>
+<em>
+Name and / or email
+</em>
+<p>
+<dt><b><tt>CurrentRPContactInfo</tt></b><dd>Contact info for that responsible party
+  (Source: USGS)<p></p>
+<p>
+<em>
+Email or other contact information
+</em>
+<p>
+<dt><b><tt>UsePolicyFull</tt></b><dd>If a project has a specific policy for use, or requests a form, it is stated here
+  (Source: USGS)<p></p>
+<p>
+<em>
+Text description of use policy
+</em>
+<p>
+<dt><b><tt>SafeDateNote</tt></b><dd>Project vary in how they handle certain types of evidence with respect to timing of migration. Some projects use 'safe dates' to say: migrants are done passing through, so a singing bird is on its territory
+  (Source: USGS)<p></p>
+<p>
+<em>
+Safe dates used, not used, or other text description of safe dates applied
+</em>
+<p>
+<dt><b><tt>Sponsors</tt></b><dd>Sponsoring organization(s) are listed
+  (Source: USGS)<p></p>
+<p>
+<em>
+Text list of sponsors
+</em>
+<p>
+<dt><b><tt>Sum_TotalSp</tt></b><dd>The total number of species for which breeding evidence was obtained; these numbers will change for projects underway
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>4</td></tr>
+<tr><th>Maximum:</th><td>294</td></tr>
+</table>
+<p>
+<dt><b><tt>Sum_Explanation</tt></b><dd>Explanation of species totals, if necessary; e.g. in some cases a book includes a species &quot;believed to breed&quot;, where we may not include that in our total
+  (Source: USGS)<p></p>
+<p>
+<em>
+Text description
+</em>
+<p>
+<dt><b><tt>Sum_TotalSightings</tt></b><dd>If our database has all sightings recorded, we put that here; in some cases many species have mutliple sightings that are condensed for summary and mapping as the &quot;highest level of confidence&quot; for a given survey block
+  (Source: USGS)<p></p>
+<p>
+<em>
+Estimate or actual count, e.g. &quot;&gt;100,000&quot;
+</em>
+<p>
+<dt><b><tt>Sum_SpCO</tt></b><dd>Total number of birds &quot;confirmed&quot; as breeding, with one of the breeding evidence types given more confidence
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>3</td></tr>
+<tr><th>Maximum:</th><td>277</td></tr>
+</table>
+<p>
+<dt><b><tt>Sum_AvgSpPerBlock</tt></b><dd>Average species breeding per block over the entire atlas area; will be small for starting projects
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>1</td></tr>
+<tr><th>Maximum:</th><td>84</td></tr>
+</table>
+<p>
+<dt><b><tt>Sum_ProjBlockCount</tt></b><dd>Number of blocks covering atlas area; depening on sampling goal, not all may have recorded sightings or effort
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>83</td></tr>
+<tr><th>Maximum:</th><td>16127</td></tr>
+</table>
+<p>
+<dt><b><tt>Sum_BlksWData</tt></b><dd>Number of blocks with data; equal to or less than the total number of block in Sum_ProjBlockCount
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>0</td></tr>
+<tr><th>Maximum:</th><td>6120</td></tr>
+</table>
+<p>
+<dt><b><tt>Sum_BlksCovered</tt></b><dd>Number of blocks receiving coverage
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>44</td></tr>
+<tr><th>Maximum:</th><td>1745</td></tr>
+</table>
+<p>
+<dt><b><tt>Sum_Participants</tt></b><dd>Total number of participants officially recognized as participating in the field work - usually under-reported
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>10</td></tr>
+<tr><th>Maximum:</th><td>5000</td></tr>
+</table>
+<p>
+<dt><b><tt>Sum_HoursRecorded</tt></b><dd>Total number of hours reported (from book or database)
+  (Source: USGS)<p></p>
+<p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th colspan="2">Range of values</th></tr>
+<tr><th>Minimum:</th><td>0</td></tr>
+<tr><th>Maximum:</th><td>&gt;200000</td></tr>
+</table>
+<p>
+</dl>
+<p>
+<dt><em>Entity_and_Attribute_Overview:</em>  
+<dd>
+
+Features are breeding bird atlas survey projects. Attributes are taken from printed publications associated with datasets, or from summarized dataset elements if appropriate.
+
+</dd>
+<dt><em>Entity_and_Attribute_Detail_Citation:</em>  <a href="http://www.pwrc.usgs.gov/bba">&lt;http://www.pwrc.usgs.gov/bba&gt;</a></dt>
+</dl>
+<p>
+</li>
+</ol>
+<p>
+<hr/>
+<h3><a name="who">Who produced the data set?</a></h3>
+<ol>
+<li><a name="who.1"><b>Who are the originators of the data set?</b></a> (may include formal authors, digital compilers, and editors)<p>
+<ul>
+<li>USGS Patuxent Wildlife Research Center and NBII
+</ul>
+<p>
+</li>
+<li><a name="who.2"><b>Who also contributed to the data set?</b></a><p>
+<blockquote>
+Thousands of volunteers in atlas project in over 30 states and a dozen counties collected the data for each breeding bird atlas project. Individual project sponsors are listed here: <a href="http://www.pwrc.usgs.gov/bba/index.cfm?fa=bba.Sponsors">&lt;http://www.pwrc.usgs.gov/bba/index.cfm?fa=bba.Sponsors&gt;</a>.   More details on each projects, and contact and source information for each (state or county) project is contained in the individual project datasets and metadata records. 
+We compiled these datasets for use in a common system for access at USGS Patuxent Wildlife Research Center. Data compilers include Naoko Griffin, Allison Sussman, Anna Ott, Mark Wimer. The compiling of atlas datasets was supported primarily through funding from the National Biological Information Infrastructure, or NBII, Bird Conservation Node. Elizabeth Martin at NBII was central to the support of this database from 2001 to 2010.
+</blockquote>
+<p>
+</li>
+<li><a name="who.3"><b>To whom should users address questions about the data?</b></a><p>
+<div style="margin-left: 2em">
+Mark Wimer<br/>
+U.S. Geological Survey, Patuxent Wildlife Research Center<br/>
+Zoologist<br/>
+12100 Beech Forest Road<br/>
+Laurel, MD 20708<br/>
+<p>
+301-497-5596 (voice)<br/>
+mwimer@usgs.gov<br/>
+<dl>
+<dt><em>Contact_Instructions:</em>  <a href="http://www.pwrc.usgs.gov/">&lt;http://www.pwrc.usgs.gov/&gt;</a></dt>
+</dl>
+</div>
+<p>
+</li>
+</ol>
+<hr/>
+<h3><a name="why">Why was the data set created?</a></h3>
+<blockquote>
+The Breeding Bird Atlas (BBA) Explorer is a website and data management system that offers data from published BBAs and interim data from ongoing BBAs in the United States in a uniform system. Breeding bird atlases are avian distribution survey projects designed to cover large geographic areas using a grid based system and are generally organized at the state or provincial level.
+</blockquote>
+<p>
+<hr/>
+<h3><a name="how">How was the data set created?</a></h3>
+<ol>
+<li><a name="how.1"><b>From what previous works were the data drawn?</b></a><p>
+<dl>
+<dt><b>BBA Explorer</b> (source 1 of 1)
+<dd>
+<blockquote>
+U.S. Geological Survey, 2011, Breeding Bird Atlas Explorer: U.S. Geological Survey and National Biological Information Infrastructure, Laurel, MD.<p>
+Online Links:
+<ul>
+<li><a href="http://www.pwrc.usgs.gov/bba">&lt;http://www.pwrc.usgs.gov/bba&gt;</a>
+</ul>
+<p>
+</blockquote>
+<dl>
+<dt><em>Type_of_Source_Media:</em>  digital data</dt>
+<dt><em>Source_Contribution:</em>  See individual BBA dataset details for more information.</dt>
+</dl>
+<p>
+</dl>
+</li>
+<li><a name="how.2"><b>How were the data generated, processed, and modified?</b></a><p>
+<dl>
+<dt>Date: 30-Jun-2011 (process 1 of 1)
+<dd>
+Most of the time, we made several changes to an individual project dataset: updating species taxonomy to current day, reprojecting or re-creating spatial sampling grids. In a couple of cases, we re-typed the entire dataset from paper printouts to capture it digitally.
+<p>
+</dl>
+</li>
+<li><a name="how.3"><b>What similar or related data should the user be aware of?</b></a><p>
+</li>
+</ol>
+<p>
+<hr/>
+<h3><a name="quality">How reliable are the data; what problems remain in the data set?</a></h3>
+<ol>
+<li><a name="quality.1"><b>How well have the observations been checked?</b></a><p>
+<p>
+</li>
+<li><a name="quality.2"><b>How accurate are the geographic locations?</b></a><p>
+Data were collected using methods that have unknown accuracy (EPA National Geospatial Data Policy [NGDP] Accuracy Tier 10). For more information, please see EPA's NGDP at <a href="http://epa.gov/geospatial/policies.html">&lt;http://epa.gov/geospatial/policies.html&gt;</a>)
+<p>
+</li>
+<li><a name="quality.3"><b>How accurate are the heights or depths?</b></a><p>
+<p>
+</li>
+<li><a name="quality.4"><b>Where are the gaps in the data?  What is missing?</b></a><p>
+The state atlas datasets not archived in the repository are noted as such in the atlas projects table.
+<p>
+</li>
+<li><a name="quality.5"><b>How consistent are the relationships among the observations, including topology?</b></a><p>
+Polygon consistency checked in ArcMap. (Topology validated.)
+</li>
+</ol>
+<p>
+<hr/>
+<h3><a name="getacopy">How can someone get a copy of the data set?</a></h3>
+<blockquote>
+<a name="getacopy.0"><b>Are there legal restrictions on access or use of the data?</b></a><p>
+<blockquote>
+<dl>
+<dt><em>Access_Constraints:</em>  None</dt>
+<dt><em>Use_Constraints:</em>  
+<dd>
+
+USGS Patuxent Wildlife Research Center's website and date of access should be cited in any use of this database (see Citation section).
+<br/>
+Substantial use of any single atlas project's data in publication or reports should cite those individual projects as well (citation format on each relevant page); and we encourage users to seek out the print publications in this case as they provide more substantial information and interpretation of data and maps.  For extensive use of atlas data in research publications, we welcome invitations of co-authorship, but it is not a requirement.
+
+</dd>
+</dl>
+</blockquote>
+</blockquote>
+<p>
+<ol>
+<li><a name="getacopy.1"><b>Who distributes the data set?</b></a> (Distributor 1 of 1)<p>
+<div style="margin-left: 2em">
+Mark Wimer<br/>
+U.S. Geological Survey, Patuxent Wildlife Research Center<br/>
+Zoologist<br/>
+12100 Beech Forest Road<br/>
+Laurel, MD 20708<br/>
+<p>
+301-497-5596 (voice)<br/>
+mwimer@usgs.gov<br/>
+<dl>
+<dt><em>Contact_Instructions:</em>  <a href="http://www.pwrc.usgs.gov/">&lt;http://www.pwrc.usgs.gov/&gt;</a></dt>
+</dl>
+</div>
+</li>
+<li><a name="getacopy.2"><b>What's the catalog number I need to order this data set?</b></a><p>
+<tt>Downloadable Data</tt>
+<p>
+</li>
+<li><a name="getacopy.3"><b>What legal disclaimers am I supposed to read?</b></a><p>
+<blockquote>
+Although these data have been processed successfully on a computer system at the US Geological Survey, no warranty expressed or implied is made regarding the accuracy or utility of the data on any other system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. It is also strongly recommended that careful attention be paid to the contents of the metadata file associated with these data to evaluate data set limitations, and to the corrsponding printed publications for detailed interpretation of the data. The USGS shall not be held liable for improper or incorrect use of the data described and/or contained herein.
+</blockquote>
+<p>
+</li>
+<li><a name="getacopy.4"><b>How can I download or order the data?</b></a><p>
+</li>
+</ol>
+<p>
+<hr/>
+<h3><a name="metaref">Who wrote the metadata?</a></h3>
+<dl>
+<dt>Dates:
+<dd>Last modified: 27-Jun-2011<br/>
+To be reviewed: 27-Jun-2015<br/>
+</dd>
+<dt>Metadata author:
+<dd>
+<div style="margin-left: 2em">
+U.S. Geological Survey, Patuxent Wildlife Research Center<br/>
+c/o Mark Wimer<br/>
+Zoologist<br/>
+12100 Beech Forest Road<br/>
+Laurel, MD 20708<br/>
+<p>
+301-497-5596 (voice)<br/>
+mwimer@usgs.gov<br/>
+<dl>
+<dt><em>Contact_Instructions:</em>  <a href="http://www.pwrc.usgs.gov/">&lt;http://www.pwrc.usgs.gov/&gt;</a></dt>
+</dl>
+</div>
+</dd>
+<dt>Metadata standard: <dd>FGDC Content Standard for Digital Geospatial Metadata (FGDC-STD-001-1998)</dl>
+<p></p>
+<hr/>
+<span class="mp-generated">Generated by <a href="http://geology.usgs.gov/tools/metadata/tools/doc/mp.html"><tt>mp</tt></a> version 2.9.6 on Tue Jun 28 16:23:20 2011<br/></span>
+
+</body>
+</html>
