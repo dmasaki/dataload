@@ -1,17 +1,21 @@
 # Set working directory
 
-setwd("C:/Users/derek/R/pwrcbbl")
+setwd("C:/Users/derek/R/pwrcwbird")
 
 
 # Import datasets
 
-bblspecies <- read.csv("C:/Users/derek/R/pwrcbbl/bands.csv")
+pwrcwb <- read.csv("C:/Users/derek/R/projects/dataload/pwrcwbird/CWBMaster.csv")
 
-specieslu <- read.csv("C:/Users/derek/R/pwrcbbl/species_lookup.csv")
+pwrcwbspecies <- read.csv("C:/Users/derek/R/projects/dataload/pwrcwbird/masterSpeciesList.csv")
 
-stctylu <- read.csv("C:/Users/derek/R/pwrcbbl/cntry_state_cnty_lookup.csv")
 
 # Review data
+
+View(pwrcwb)
+
+View(pwrcwbspecies)
+
 
 # Add sqldf library
 
@@ -19,72 +23,56 @@ install.packages("sqldf")
 
 library("sqldf", lib.loc="~/R/win-library/3.1")
 
-# Add species names to bblspecies dataframe
+# Add species names to pwrcwb dataframe
 
-# SPECIES_ID in bblspecies is our key for retrieving scientific/common name
+# AOU code in pwrcwb is our key for retrieving scientific/common name
 
-speciesjoinstr <- "select bblspecies.*, specieslu.SCI_NAME, specieslu.SPECIES_NAME, specieslu.ALPHA_CODE from bblspecies left join specieslu on bblspecies.SPECIES_ID = specieslu.SPECIES_ID"
+speciesjoinstr <- "select pwrcwb.*, pwrcwbspecies.EnglishFull, pwrcwbspecies.Genus, pwrcwbspecies.Species from pwrcwb left join pwrcwbspecies on pwrcwb.AOU_code = pwrcwbspecies.Aou"
 
-bblspecies_join_temp<-bblspecies_join
+pwrcwb_join_temp <- sqldf(speciesjoinstr)
 
-bblspecies_join <- sqldf(speciesjoinstr)
+View(pwrcwb_join_temp)
 
-# drop "X..." column
+# if temp join works create pwrcw_join
 
-bblspecies$X...<-NULL
-
-# change date format ex. "12/14/98" >> "1998-12-14"
+pwrcwb_join <- pwrcwb_join_temp
 
 
-bblspecies_join$isodate<-as.Date(strptime(bblspecies_join$Banding.Date,'%Y-%m-%d'))
+# change date format to ISO ex. "12/14/98" >> "1998-12-14"
 
-# Add geographic information from state county lookup
+pwrcwb_join$isodate<-as.Date(strptime(pwrcwb_join$SurveyDate,"%m/%d/%Y"))
 
-# Clean up code fields
+# Add geographic information from state lookup
 
-# County code should be 3 character string
+# retrieve state lookup 
 
-stctylu$COUNTY_CODE<-sprintf("%03d",stctylu$COUNTY_CODE)
+states <- read.csv("C:/Users/derek/R/projects/dataload/pwrcwbird/states.csv", header=FALSE)
 
-bblspecies_join$COUNTY_CODE<-sprintf("%03d",bblspecies_join$COUNTY_CODE)
+# Join pwrcwb and state
 
-# State code should be 2 character string
+colnames(pwrcwb_join)[12]<-"common_name"
 
-stctylu$STATE_CODE<-sprintf("%02d",stctylu$STATE_CODE)
+stjoinstr <- "select pwrcwb_join.*, states.state_name from pwrcwb_join left join states on pwrcwb_join.State = states.abbr"
 
-bblspecies_join$STATE_CODE<-sprintf("%02d",bblspecies_join$STATE_CODE)
+pwrcwb_join_temp <- sqldf(stjoinstr)
 
-# Concatenate state and county code to get 5 character FIPS
-
-bblspecies_join$FIPS <- paste(bblspecies_join$STATE_CODE, bblspecies_join$COUNTY_CODE, sep='')
-
-stctylu$FIPS <- paste(stctylu$STATE_CODE, stctylu$COUNTY_CODE, sep='')
-
-# Join bblspecies_join and state lookup to retrieve state county
-
-stcntyjoinstr <- "select bblspecies_join.*, stctylu.STATE_NAME, stctylu.COUNTY_NAME, stctylu.COUNTY_DESCRIPTION, stctylu.COUNTRY_CODE from bblspecies_join left join stctylu on bblspecies_join.FIPS = stctylu.FIPS"
-
-bblspecies_join_temp <- sqldf(stcntyjoinstr)
-
-bblspecies_join <- sqldf(stcntyjoinstr)
-
-
-# if join returns same number of rows as original then commit final
-
-bblspecies_join <- sqldf(stcntyjoinstr)
-
+pwrcwb_join <- pwrcwb_join_temp
 
 # Clean up headers and drop columns
 
 # change column header name
 
-colnames(bblspecies_join)
+colnames(pwrcwb_join)
 
-colnames(bblspecies_join)[1]<-"newname"
+colnames(pwrcwb_join)[1]<-"newname"
 
 # drop column
 
-bblspecies_join$header<-NULL
+pwrcwb_join$header<-NULL
+
+# write results
+
+write.csv(pwrcwb_join,"pwrcwb_bison_final_2015-02-06.csv",row.names=FALSE)
 
 
 
