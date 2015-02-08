@@ -23,7 +23,7 @@ install.packages("sqldf")
 
 library("sqldf", lib.loc="~/R/win-library/3.1")
 
-# Add species names to pwrcwb dataframe
+# join species names to pwrcwb dataframe from master species list
 
 # AOU code in pwrcwb is our key for retrieving scientific/common name
 
